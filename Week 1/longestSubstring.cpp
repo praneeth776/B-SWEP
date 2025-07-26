@@ -12,12 +12,12 @@ int solution(string s){
     map.insert(s[0]);
 
     while(right < s.size()-1){
-        if(map.find(s[right + 1]) == map.end()){
+        if(map.find(s[right + 1]) == map.end()){ // Unique
             map.insert(s[right+1]);
-            curr_size++;
-            if(curr_size > max) max = curr_size;
-            right++;
-        } else{
+            curr_size++; // 2
+            if(curr_size > max) max = curr_size; 
+            right++; // 2
+        } else{ // Already exists in the map
             map.erase(s[left]);
             curr_size--;
             left++;
@@ -33,3 +33,6 @@ int main(){
     cout << solution("abcdefg") << endl; // 7
     return 0;
 }
+
+aabcabba
+ ^^

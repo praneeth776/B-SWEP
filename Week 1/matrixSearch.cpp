@@ -26,7 +26,7 @@ int solution(vector<vector<char>> board, string word){
     int total = 0;
 
     // Rows
-    for(int i = 0; i < rows; i++){
+    for(int i = 0; i < rows; i++){ // Iterating over all the rows
         string rowStr = "";
         for (int j = 0; j < cols; j++) {
             rowStr += board[i][j];
@@ -34,7 +34,8 @@ int solution(vector<vector<char>> board, string word){
         total += countOccurences(rowStr, word);
     }
 
-    for (int j = 0; j < cols; j++) {
+    // Columns
+    for (int j = 0; j < cols; j++) { // Iterate over all the Columns
         string colStr = "";
         for (int i = 0; i < rows; i++) {
             colStr += board[i][j];
@@ -42,6 +43,7 @@ int solution(vector<vector<char>> board, string word){
         total += countOccurences(colStr, word);
     }
 
+    // Diagonals 
     for (int startCol = 0; startCol < cols; startCol++) {
         string diagonal = "";
         for (int i = 0, j = startCol; i < rows && j < cols; i++, j++) {
