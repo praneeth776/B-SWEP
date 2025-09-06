@@ -58,6 +58,8 @@ vector<int> solution(vector<int>& deck){
 
 int main(){
     vector<int> test1 = {17,13,11,2,3,5,7};
+    vector<int> test2 = {3,9,18,4,6,10};
     displayVector(solution(test1));
+    displayVector(solution(test2));
     return 0;
 }

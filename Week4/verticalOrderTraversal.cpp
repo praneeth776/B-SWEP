@@ -46,7 +46,7 @@ void traverseTree(TreeNode* root, int col, int row, map<int,vector<vector<int>>>
  * Return the vertical order traversal of the binary tree.
  */
 vector<vector<int>> solution(TreeNode* root){
-    // Have a vector<unordered_map<int,vector<int>>> to store.
+    // Have a map<int,vector<vector<int>>> to store.
     // unordered_map to store for each level.
     // key is the column and vector<int> will be the nodes on the same row and col which would 
     // later be sorted.

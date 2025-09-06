@@ -2,6 +2,22 @@
     "files.associations": {
         "vector": "cpp",
         "unordered_set": "cpp",
-        "initializer_list": "cpp"
-    }
+        "initializer_list": "cpp",
+        "iostream": "cpp",
+        "span": "cpp",
+        "array": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "map": "cpp",
+        "stack": "cpp",
+        "queue": "cpp",
+        "unordered_map": "cpp",
+        "__hash_table": "cpp",
+        "__split_buffer": "cpp",
+        "__tree": "cpp",
+        "bitset": "cpp",
+        "deque": "cpp",
+        "set": "cpp"
+    },
+    "OpenCL.explorer.localizedProperties": false
 }
