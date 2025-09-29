@@ -19,7 +19,7 @@ int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
     diff[0] = gas[0]-cost[0];
     for(int i = 1; i < gas.size(); i++){
         diff[i] = diff[i-1] + gas[i] - cost[i];
-        total += diff[i];
+        total += gas[i] - cost[i];
     }
     if(total < 0) return -1;
 
@@ -32,9 +32,7 @@ int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
         }
     }
 
-    // Now in diff. Starting at each index lets check the max positive diff starting from that index. Or the sum till the first occurence of a negative sum
-
-
+    return idx;
 
 
 }
